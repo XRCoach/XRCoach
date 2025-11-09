@@ -28,7 +28,7 @@ public class SessionManager : MonoBehaviour
     private void Start()
     {
         UpdateStatus("Ready - Tap START");
-        FindObjectOfType<SensorManager>()?.Calibrate();
+        var sensorManager = Object.FindFirstObjectByType<SensorManager>();
     }
 
     public void StartSession()
