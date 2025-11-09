@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
+<<<<<<< HEAD
   productGUID: 7cc9acbf05ab1e64d861e9fd5459c86d
+=======
+  productGUID: dc595bd789cbe1645ae9fc82c83e9107
+>>>>>>> origin/MOHAMED
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -133,7 +137,10 @@ PlayerSettings:
   switchNVNMaxPublicSamplerIDCount: 0
   switchMaxWorkerMultiple: 8
   switchNVNGraphicsFirmwareMemory: 32
+<<<<<<< HEAD
   switchGraphicsJobsSyncAfterKick: 1
+=======
+>>>>>>> origin/MOHAMED
   vulkanNumSwapchainBuffers: 3
   vulkanEnableSetSRGBWrite: 0
   vulkanEnablePreTransform: 1
@@ -532,9 +539,12 @@ PlayerSettings:
   - m_BuildTarget: AndroidPlayer
     m_APIs: 150000000b000000
     m_Automatic: 0
+<<<<<<< HEAD
   - m_BuildTarget: WindowsStandaloneSupport
     m_APIs: 0200000012000000
     m_Automatic: 0
+=======
+>>>>>>> origin/MOHAMED
   m_BuildTargetVRSettings: []
   m_DefaultShaderChunkSizeInMB: 16
   m_DefaultShaderChunkCount: 0
@@ -819,12 +829,19 @@ PlayerSettings:
   webGLMemoryLinearGrowthStep: 16
   webGLMemoryGeometricGrowthStep: 0.2
   webGLMemoryGeometricGrowthCap: 96
+<<<<<<< HEAD
+=======
+  webGLEnableWebGPU: 0
+>>>>>>> origin/MOHAMED
   webGLPowerPreference: 2
   webGLWebAssemblyTable: 0
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
+<<<<<<< HEAD
   webEnableSubmoduleStrippingCompatibility: 0
+=======
+>>>>>>> origin/MOHAMED
   scriptingDefineSymbols: {}
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -924,11 +941,19 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: ad1901f7-862c-47ce-a99e-e8dcaeb22578
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: XRCoach
   organizationId: unity_ece37368a8fbbe288def
+=======
+  cloudProjectId: 
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: 
+  organizationId: 
+>>>>>>> origin/MOHAMED
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
@@ -937,4 +962,7 @@ PlayerSettings:
   insecureHttpOption: 0
   androidVulkanDenyFilterList: []
   androidVulkanAllowFilterList: []
+<<<<<<< HEAD
   androidVulkanDeviceFilterListAsset: {fileID: 0}
+=======
+>>>>>>> origin/MOHAMED
