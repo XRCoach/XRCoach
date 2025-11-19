@@ -15,19 +15,29 @@ public class BLEWrapper : MonoBehaviour, IReadableSensor
     private BleConnector ble_connector;
     private ImuDataPoint? latestDataPoint = null;
 
+    // NEW, CORRECTED CODE
     void Start()
     {
-        // Add the BleConnector component from the plugin to this GameObject
-        ble_connector = gameObject.AddComponent<BleConnector>();
+        // IMPORTANT: Only try to use the BLE plugin if we are NOT in the editor.
+        if (!Application.isEditor)
+        {
+            // Add the BleConnector component from the plugin to this GameObject
+            ble_connector = gameObject.AddComponent<BleConnector>();
 
-        // Configure it with our parameters
-        ble_connector.DeviceName = targetDeviceName;
-        ble_connector.ServiceUUID = serviceUUID;
-        ble_connector.Characteristic = characteristicUUID;
+            // Configure it with our parameters
+            ble_connector.DeviceName = targetDeviceName;
+            ble_connector.ServiceUUID = serviceUUID;
+            ble_connector.Characteristic = characteristicUUID;
 
-        // Start scanning for the device
-        Debug.Log($"[BLEWrapper] Starting scan for {targetDeviceName}");
-        ble_connector.Scan();
+            // Start scanning for the device
+            Debug.Log($"[BLEWrapper] Starting scan for {targetDeviceName}");
+            ble_connector.Scan();
+        }
+        else
+        {
+            // If we are in the editor, just print a message and do nothing.
+            Debug.Log("[BLEWrapper] In Editor mode. BLE hardware calls are disabled.");
+        }
     }
 
     void Update()

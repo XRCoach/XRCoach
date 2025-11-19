@@ -28,6 +28,7 @@ public class PhoneSensor : MonoBehaviour, IReadableSensor
         }
         else
         {
+            // ... code pour le téléphone ...
             if (!Input.gyro.enabled) return;
             accel = Input.acceleration;
             gyro = Input.gyro.rotationRate;
@@ -36,12 +37,19 @@ public class PhoneSensor : MonoBehaviour, IReadableSensor
 
         currentDataPoint = new ImuDataPoint
         {
+            // ... attribution des valeurs ...
             Timestamp = System.DateTimeOffset.UtcNow.ToUnixTimeMilliseconds(),
             Acceleration = accel,
             Gyroscope = gyro,
             Source = source
         };
         hasNewData = true;
+
+        // ***** AJOUTEZ CETTE LIGNE POUR LE TEST *****
+        if (Application.isEditor)
+        {
+            Debug.Log($"[SIMULATED] Gyro: {gyro}");
+        }
     }
 
     public bool TryGetLatestData(out ImuDataPoint dataPoint)
